@@ -1,0 +1,174 @@
+/* Background Futuristik untuk Header */
+header {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #d9e4ec;
+}
+
+/* Background untuk Body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: linear-gradient(180deg, #1f1c2c, #928dab);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Kartu Produk */
+.product-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(145deg, #0f0c29, #302b63, #24243e);
+}
+
+/* Gaya Text pada Produk */
+.details h2 {
+    color: #ff0095;
+    text-shadow: 0 2px 5px rgba(195, 0, 255, 0.8);
+}
+
+.details p,
+.details ul li {
+    color: #b3b3b3;
+}
+
+/* Tombol dengan Efek Neon */
+button {
+    background: #ff0095;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(162, 0, 255, 0.75);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(132, 0, 255, 0.9);
+}
+
+/* Background untuk Testimoni */
+.testimonials {
+    background: linear-gradient(135deg, #141e30, #243b55);
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Animasi Gradien pada Judul */
+header h1 {
+    background: linear-gradient(to right, #7700ff, #a200ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glowing 3s infinite alternate;
+}
+
+@keyframes glowing {
+    from {
+        background-position: 0% 50%;
+    }
+    to {
+        background-position: 100% 50%;
+    }
+}
+.XYNERA{
+    width: 100px;
+}
+/* Seksi Pilihan Produk */
+.product-choices {
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #232526, #414345);
+    border-radius: 10px;
+    color: #fff;
+}
+
+.product-choices h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #00c6ff;
+    text-shadow: 0 2px 5px rgba(0, 198, 255, 0.8);
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    background: #1f1c2c;
+    color: #b3b3b3;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    color: #00c6ff;
+    margin: 10px 0;
+}
+
+.product-card p.price {
+    color: #4CAF50;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.product-card button {
+    margin-top: 15px;
+    background: #00c6ff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 198, 255, 0.75);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 198, 255, 0.9);
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
