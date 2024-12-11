@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <main>
+        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="index.js">
+        <section class="product-info">
+            <img class="XYNERA" src="img/IMG-20241121-WA0002.jpg" alt="XYNERA">
+            <div class="details">
+                <h2>MUDO</h2>
+                <p>Botol tumbler dengan teknologi sinar UV yang mampu menjernihkan air dengan aman, serta blender portabel yang bisa digunakan secara terpisah untuk kebutuhan minuman sehat Anda.</p>
+                <ul>
+                    <li>Teknologi UV untuk sterilisasi air.</li>
+                    <li>Blender portabel dengan baterai tahan lama.</li>
+                    <li>Desain modern dan mudah dibawa.</li>
+                </ul>
+                <button id="buy-now">Beli Sekarang</button>
+            </div>
+        </section>
+    
+        
+        <section class="order-form">
+            <h2>Pesan Sekarang</h2>
+            <form id="order-form">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+    
+                <label for="quantity">Jumlah:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+    
+                <button type="submit">Kirim Pesanan</button>
+            </form>
+        </section>
+        </section>
+    </main>
+    <section class="product-choices">
+        <h2>Pilihan Produk</h2>
+        <div class="product-grid">
+           
+            <div class="product-card">
+                <img src="img/WhatsApp Image 2024-03-09 at 19.25.46_1e2c777f.jpg" alt="Tumbler UV + Blender">
+                <h3>Tumbler UV + Blender</h3>
+                <p>Paket tumbler UV dan blender portabel untuk minuman sehat Anda.</p>
+                <p class="price">Rp 499.000</p>
+                <button class="select-product">Pilih Produk</button>
+            </div>
+            
+        </div>
+    </section>
+    <script>
+document.getElementById('buy-now').addEventListener('click', function () {
+    alert('Ayo pesan sekarang dan nikmati hidup sehat!');
+});
+
+document.getElementById('order-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const quantity = document.getElementById('quantity').value;
+
+    if (name && email && quantity) {
+        alert(`Terima kasih, ${name}! Pesanan Anda sejumlah ${quantity} pcs telah kami terima. Cek email di ${email} untuk konfirmasi.`);
+        this.reset(); 
+    } else {
+        alert('Harap isi semua data dengan lengkap.');
+    }
+});
+
+const productButtons = document.querySelectorAll('.select-product');
+productButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+        const productName = button.parentElement.querySelector('h3').textContent;
+        alert(`Anda memilih: ${productName}. Anda akan diarahkan ke halaman pembelian.`);
+        window.location.href = "https://id.penworldwide.org/portal/";
+    });
+});
+
+document.getElementById('buy now').addEventListener('click', () => {
+    document.getElementById('pilihan-produk').scrollIntoView({
+        behavior: 'smooth',
+        block: 'start' 
+    });
+});
+</script>
+</html>
